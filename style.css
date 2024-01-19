@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.1;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: hsl(193, 38%, 86%);
+}
+
+.attribution a {
+    color: hsl(150, 100%, 66%);
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(218, 23%, 16%);
+    padding-inline: 4%;
+    padding-block: 3rem;
+    position: relative;
+}
+
+main {
+    width: 100%;
+    max-width: 32rem;
+    text-align: center;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: clamp(0.6rem, 2vw, 0.75rem);
+    padding: clamp(1.5rem, 2vw, 2rem) 4% clamp(1.5rem, 2vw, 2rem) 4%;
+    height: auto;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.advice-id {
+    font-size: 1rem;
+    color: hsl(150, 100%, 66%);
+    margin-bottom: clamp(0.6rem, 2vw, 1.2rem);
+}
+
+.advice-text {
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: hsl(193, 38%, 86%);
+    margin-bottom: clamp(1rem, 2vw, 1.2rem);
+}
+
+.mobile-pattern {
+    margin-bottom: 1.8rem;
+}
+
+.desktop-pattern {
+    display: none;
+}
+
+.dice {
+    background-color: hsl(150, 100%, 66%);
+    border-radius: 50%;
+    padding: 0.8rem;
+    position: absolute;
+    bottom: -1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dice:hover {
+    box-shadow: 0 0 2rem hsl(150, 100%, 66%);
+}
+
+.dice-icon {}
+
+@media (min-width: 64rem) {
+    .mobile-pattern {
+        display: none;
+    }
+
+    .desktop-pattern {
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    .advice-text {
+        line-height: 1.5;
+    }
+
+    .dice {
+        padding: 1rem;
+    }
+}
