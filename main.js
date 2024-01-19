@@ -17,8 +17,10 @@ const myTest = () => {
     }
 
     xhttp.onloadend = () => {
-        diceBtn.enable;
-        diceBtn.style.backgroundColor = "";
+        setTimeout(() => {
+            diceBtn.enable;
+            diceBtn.style.backgroundColor = "";
+        }, 2000);
     }
 
     xhttp.open("GET", "https://api.adviceslip.com/advice");
