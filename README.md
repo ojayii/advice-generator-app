@@ -28,6 +28,7 @@ Users should be able to:
 - CSS
 - Javascript
 - Javascript XMLHttpRequest() class
+- Developer tools
 - Mobile-first workflow
 
 ### What I learned
